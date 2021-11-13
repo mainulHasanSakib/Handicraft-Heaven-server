@@ -37,7 +37,7 @@ app.get('/products', async(req, res)=>{
     const products =await cursor.toArray();
     res.send(products);
 })
-app.get('/review', async(req, res)=>{
+app.get('/reviews', async(req, res)=>{
     const cursor = reviewsCollection.find({});
     const review =await cursor.toArray();
     res.send(review);
